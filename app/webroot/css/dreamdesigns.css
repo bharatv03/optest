@@ -1,0 +1,716 @@
+/*!
+
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+
+ * Code licensed under the Apache License v2.0.
+
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+
+ */
+
+@font-face {
+
+  font-family: "invited";
+
+  src: url("../fonts/new/YoureInvited.eot?") format("eot"),
+
+  url("../fonts/new/YoureInvited.woff") format("woff"),
+
+  url("../fonts/new/YoureInvited.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "dragon";
+
+  src: url("../fonts/new/Dragon is coming.eot?") format("eot"),
+
+  url("../fonts/new/Dragon is coming.woff") format("woff"),
+
+  url("../fonts/new/Dragon is coming.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "chopin";
+
+  src: url("../fonts/new/ChopinScript.eot?") format("eot"),
+
+  url("../fonts/new/ChopinScript.woff") format("woff"),
+
+  url("../fonts/new/ChopinScript.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "version";
+
+  src: url("../fonts/new/Candlescript Demo Version.eot?") format("eot"),
+
+  url("../fonts/new/Candlescript Demo Version.woff") format("woff"),
+
+  url("../fonts/new/Candlescript Demo Version.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "birds";
+
+  src: url("../fonts/new/Birds of Paradise.eot?") format("eot"),
+
+  url("../fonts/new/Birds of Paradise.woff") format("woff"),
+
+  url("../fonts/new/Birds of Paradise.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "texts";
+
+  src: url("../fonts/new/Caramella_Regular.eot?") format("eot"),
+
+  url("../fonts/new/Caramella_Regular.woff") format("woff"),
+
+  url("../fonts/new/Caramella_Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "headings";
+
+  src: url("../fonts/new/High Thin LIGHT.eot?") format("eot"),
+
+  url("../fonts/new/High Thin LIGHT.woff") format("woff"),
+
+  url("../fonts/new/High Thin LIGHT.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "neon";
+
+  src: url("../fonts/new2/Neon.eot?") format("eot"),
+
+  url("../fonts/new2/Neon.woff") format("woff"),
+
+  url("../fonts/new2/Neon.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "bar1";
+
+  src: url("../fonts/new2/BrannbollFet.eot?") format("eot"),
+
+  url("../fonts/new2/BrannbollFet.woff") format("woff"),
+
+  url("../fonts/new2/BrannbollFet.ttf") format("truetype");
+
+}
+
+@font-face {
+
+  font-family: "bar2";
+
+  src: url("../fonts/new2/BrannbollSmal.eot?") format("eot"),
+
+  url("../fonts/new2/BrannbollSmal.woff") format("woff"),
+
+  url("../fonts/new2/BrannbollSmal.ttf") format("truetype");
+
+}
+body {
+
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    background: url('../img/bg.jpg');
+
+    background-repeat: repeat;
+
+    /*-webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    background-size: cover;
+
+    -o-background-size: cover;*/
+
+}
+
+#logo_image
+
+{
+
+    display: none
+
+}
+
+
+
+.camera_thumb
+
+{
+
+width:150px
+
+}
+
+.click-image img:hover
+{
+cursor: pointer;
+opacity:.8;
+}
+
+.box
+
+{
+
+    background: none !important
+
+}
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    color: #DC817A;
+
+  
+
+    font-family: "texts";
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    font-size: 3em;
+
+}
+
+.content
+
+{
+
+    padding: 10px;
+
+    -webkit-border-radius: 10px 10px 10px 10px;
+
+    border-radius: 10px 10px 10px 10px;
+
+    -webkit-box-shadow: 2px 2px 10px 2px #E77816;
+
+    box-shadow: 2px 2px 10px 2px #E77816;
+
+}
+
+.myCon
+
+{
+
+    background: #F1F0EC !important;
+
+    -webkit-border-radius: 10px 10px 10px 10px;
+
+    border-radius: 10px 10px 10px 10px;
+
+   -webkit-box-shadow: 2px 2px 10px 2px #E77816;
+
+    box-shadow: 2px 2px 10px 2px #E77816;
+
+}
+
+p, .myCon li {
+
+    font-family: "texts";
+
+    font-size: 1.5em;
+
+    line-height: 1.6;
+
+    color: #000;
+
+}
+
+
+
+hr {
+
+    max-width: 400px;
+
+    border-color: #999999;
+
+}
+
+
+
+.brand,
+
+.address-bar {
+
+    display: none;
+
+}
+
+.img-intro
+
+{
+
+    height: 200px
+
+}
+
+.mCSB_draggerRail
+
+{
+
+    background: #D36159 !important
+
+}
+
+.mCSB_dragger
+
+{
+
+    background: #E77816
+
+}
+
+label.error
+
+{
+
+    margin: 5px;
+
+    color: #a94442;
+
+  background-color: #f2dede;
+
+  border-color: #ebccd1;
+
+}
+
+.navbar-brand {
+
+    /*text-transform: uppercase;*/
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.navbar-nav {
+
+    /*text-transform: uppercase;*/
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+
+
+
+.img-full {
+
+    min-width: 100%;
+
+}
+
+
+
+.brand-before,
+
+.brand-name {
+
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+.brand-before {
+
+    margin: 15px 0;
+
+}
+
+
+
+.brand-name {
+
+    margin: 0;
+
+    font-size: 4em;
+
+}
+
+
+
+.tagline-divider {
+
+    margin: 15px auto 3px;
+
+    max-width: 250px;
+
+    border-color: #999999;
+
+}
+
+
+
+.box  {
+
+    margin-bottom: 20px;
+
+    padding: 30px 15px;
+
+   
+
+    background: rgba(255,255,255,0.9);
+
+}
+
+
+
+.intro-text {
+
+    text-transform: uppercase;
+
+    font-size: 1.25em;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.img-border {
+
+    float: none;
+
+    margin: 0 auto 0;
+
+    border: #999999 solid 1px;
+
+}
+
+
+
+.img-left {
+
+    float: none;
+
+    margin: 0 auto 0;
+
+}
+
+
+
+footer {
+
+    
+
+    background: rgba(255,255,255,0.9);
+
+}
+
+
+
+footer p {
+
+    margin: 0;
+
+    padding: 10px;
+
+    font-family: "texts";
+
+        font-size: 1em;
+
+}
+
+.image_title
+
+{
+
+    background: #000;
+
+    opacity: .5;
+
+    color: #fff;
+
+    display: none;
+
+    margin-bottom: -20px
+
+}
+
+.image-container
+
+{
+
+    max-height: 200px;
+
+    margin-bottom:  10px;
+
+    overflow: hidden;
+
+}
+
+.my-content{
+
+    max-height: 350px;
+
+
+
+padding: 5px;
+
+/*border-color: #C3251F*/
+
+}
+
+.myClass
+
+{
+
+    background: none !important
+
+}
+
+
+
+.navbar-nav>li>a {
+
+        line-height: normal;
+
+        color: #000  
+
+    }
+
+.active_menu>a
+
+{
+
+    color: #DC817A  !important;
+
+    
+
+}
+
+
+
+@media screen and (min-width:1199px) {
+
+    #logo_image
+
+    {
+
+        display: block
+
+    }
+
+    .brand {
+
+        display: inherit;
+
+        margin: 0;
+
+        padding: 30px 0 10px;
+
+        text-align: center;
+
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+        font-size: 5em;
+
+        font-weight: 700;
+
+        line-height: normal;
+
+        color: #fff;
+
+    }
+
+
+
+    .top-divider {
+
+        margin-top: 0;
+
+    }
+
+
+
+    .img-left {
+
+        float: left;
+
+        margin-right: 25px;
+
+    }
+
+
+
+    .address-bar {
+
+        display: inherit;
+
+        margin: 0;
+
+        padding: 0 0 40px;
+
+        text-align: center;
+
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+
+        text-transform: uppercase;
+
+        font-size: 1.25em;
+
+        font-weight: 400;
+
+        letter-spacing: 3px;
+
+        color: #fff;
+
+    }
+
+
+
+    .navbar {
+
+        border-radius: 0;
+
+    }
+
+
+
+    .navbar-header {
+
+        display: none;
+
+    }
+
+
+
+    .navbar {
+
+        min-height: 0;
+
+    }
+
+
+
+    .navbar-default {
+
+        border: none;
+
+        
+
+        
+
+       background: rgba(255,255,255,0.9);
+
+    }
+
+   
+
+    .nav>li>a {
+
+     font-family: "texts";
+
+     font-weight: 900;
+
+        font-size: 1.6em;
+
+        margin-top: 50px; 
+
+        padding: 10px;
+
+         padding-bottom: 2px !important
+
+    }
+
+
+
+    
+
+     .navbar-nav>li>a:hover {
+
+        line-height: normal;
+
+        color: #D36159 !important
+
+    }
+
+   
+
+    
+
+    .navbar-nav {
+
+        display: table;
+
+        float: none;
+
+        margin: 0 auto;
+
+        table-layout: fixed;
+
+        font-size: 1.25em;
+
+    }
+
+}
+
+
+
+@media screen and (min-width:1199px) {
+
+    #logo_image
+
+    {
+
+        display: block
+
+    }
+
+    .box:after {
+
+        content: '';
+
+        display: table;
+
+        clear: both;
+
+    }
+
+}
