@@ -207,7 +207,6 @@ class OptestController extends AppController {
                 $this->Session->write('paperSetMaster',$paperSetMaster);
             }
             
-            
             if($this->Session->check('time') == false)
             {
                 $time_limit = explode(".",$paperSetMaster['PaperSetMaster']['time_limit']);
