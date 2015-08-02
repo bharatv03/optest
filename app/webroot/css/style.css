@@ -179,3 +179,23 @@ tr:hover
 {
     font-size: small
 }
+
+.visited-1
+{
+    background:red
+}
+
+.visited-2
+{
+    background:green
+}
+
+.visited-3
+{
+    background:yellow
+}
+
+.visited-4
+{
+    background:blue
+}

@@ -5296,3 +5296,13 @@ Stack Trace:
 #3 E:\xampp\htdocs\optest\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(OptestController), Object(CakeRequest))
 #4 E:\xampp\htdocs\optest\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-08-02 15:10:02 Error: Fatal Error (4): syntax error, unexpected 'clear' (T_STRING), expecting ',' or ';' in [E:\xampp\htdocs\optest\app\View\Optest\optexam.ctp, line 86]
+2015-08-02 15:10:02 Error: [FatalErrorException] syntax error, unexpected 'clear' (T_STRING), expecting ',' or ';'
+Request URL: /optest/optest/optexam
+Stack Trace:
+#0 E:\xampp\htdocs\optest\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 86, Array)
+#2 E:\xampp\htdocs\optest\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 86, Array)
+#3 E:\xampp\htdocs\optest\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

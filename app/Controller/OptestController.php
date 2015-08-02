@@ -248,14 +248,18 @@ class OptestController extends AppController {
     /*change the question tab*/
     function changeTab()
     {
-        $currentQue = base64_decode($_POST['give']);
-        $this->Session->write('currentTab',$currentQue);
-        $newPaperData = $this->Session->read('paperData')[$currentQue][0];
-        $newPaperData['answer'] = '';
-        $newPaperData['visited'] = 1;
-        $this->Session->read('paperData')[$currentQue][0] = $newPaperData;
-        $activeQue[$currentQue][] = $newPaperData;
-        $activeQue[$currentQue]['queNo'] = 1;
+        $currentTab = base64_decode($_POST['give']);
+        $this->Session->write('currentTab',$currentTab);
+        $currentPaper = $this->Session->read('paperData');
+        if(!isset($currentPaper[$currentTab][0]['answer']))
+        {
+            $currentPaper[$currentTab][0]['answer'] = '';
+            $currentPaper[$currentTab][0]['visited'] = 1;
+        }
+        //print_r($currentPaper);die;
+        $this->Session->write('paperData', $currentPaper);
+        $activeQue[$currentTab][] = $currentPaper[$currentTab][0];
+        $activeQue[$currentTab]['queNo'] = 1;
         $this->Session->write('activeQue',$activeQue);
         $this->redirect('optexam');
     }
@@ -263,11 +267,14 @@ class OptestController extends AppController {
     /*change the question*/
     function changeQue()
     {
-        $currentQue = $this->request->data['give'];
-        $newPaperData = $this->Session->read('paperData')[$this->Session->read('currentTab')][$currentQue-1];
-        $newPaperData['answer'] = '';
-        $newPaperData['visited'] = 1;
-        $this->Session->read('paperData')[$this->Session->read('currentTab')][$currentQue-1] = $newPaperData;
+        $currentQue = (int)$this->request->data['give'];
+        $currentPaper = $this->Session->read('paperData');
+        if(!isset($currentPaper[$this->Session->read('currentTab')][$currentQue-1]['answer']))
+        {
+            $currentPaper[$this->Session->read('currentTab')][$currentQue-1]['answer'] = '';
+            $currentPaper[$this->Session->read('currentTab')][$currentQue-1]['visited'] = 1;
+        }
+        $this->Session->write('paperData', $currentPaper);
         $activeQue[$this->Session->read('currentTab')][] = $this->Session->read('paperData')[$this->Session->read('currentTab')][$currentQue-1];
         $activeQue[$this->Session->read('currentTab')]['queNo'] = $currentQue;
         $this->Session->write('activeQue',$activeQue);
